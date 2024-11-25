@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--IMAGE MAPS-->
+    <!--HTML image maps enable one to create clickable areas on an image
+    An image map essentially enables you to perform various activities 
+    on the same image but on different parts depending on where you click
+    
+    Insert an image using an <img> tag
+    Use the usemap attribute to create the image map with #button at 
+    the beginning of value name-->
+
+    <img
+      src="https://i.dailymail.co.uk/i/pix/2012/06/29/article-2166697-13DB2ADF000005DC-143_634x476.jpg"
+      alt="African home"
+      usemap="#africanhome"
+    />
+
+    <!--Map is then used to create an image map using the name attribute
+    and the name given as value for usemap attribute as follows-->
+
+    <!--Add a clickable area using the area element, and shape of the clickable area must be defined.
+    You must also define some coordinates to be able to place clickable areas onto the image-->
+
+    <map name="africanhome">
+      <area
+        target="_blank"
+        alt="Standalone"
+        href="formatting.html"
+        coords="193,304,258,337"
+        shape="rect"
+      />
+      <area
+        target="_blank"
+        alt="Bike"
+        href="paragraphs.html"
+        coords="488,287,485,298,472,298,464,305,461,317,463,325,468,331,478,333,485,333,493,330,499,321,500,309,507,315,509,324,516,329,525,338,533,338,539,332,544,324,545,314,542,304,538,297,531,292,528,285,517,283,508,278,499,275,494,278"
+        shape="poly"
+      />
+    </map>
+    <img
+      src="https://c8.alamy.com/comp/2J3M37F/beautiful-garden-cartoon-background-illustration-with-scenery-nature-of-plants-various-animals-flowers-tree-and-green-grass-in-flat-design-style-2J3M37F.jpg"
+      alt="My garden"
+      usemap="#garden"
+    />
+    <map name="garden">
+      <area
+        target="_blank"
+        alt="Obwolo"
+        title="Mushroom"
+        href="https://www.euclidlibrary.org/sites/default/files/migrated//mushroom-moss-mini-mushroom-sponge.jpg"
+        coords="446,308,434,310,424,315,413,319,401,323,389,326,375,332,365,334,354,340,344,346,336,353,327,362,321,370,315,380,312,389,313,401,316,408,324,417,331,423,345,427,355,427,362,434,372,440,383,446,393,453,403,457,413,458,409,471,407,481,406,496,400,502,397,512,392,523,389,535,406,540,419,543,438,542,447,542,452,529,456,512,460,493,466,481,470,462,486,466,501,469,512,474,521,480,533,480,545,486,559,484,576,478,587,469,591,451,586,434,583,420,570,401,562,388,548,371,538,356,530,343,517,330,507,319,493,314,470,308"
+        shape="poly"
+      />
+      <area
+        target="_blank"
+        alt="Froggy"
+        title="Little Frog"
+        href="https://cdn.mos.cms.futurecdn.net/39CUYMP8vJqHAYGVzUghBX-1200-80.jpg"
+        coords="493,643,484,643,474,636,462,629,453,629,442,639,442,647,442,655,440,662,436,668,431,678,432,689,436,702,443,711,454,716,463,720,459,728,454,737,445,741,436,741,430,749,430,757,435,765,442,774,450,781,445,789,450,797,459,799,469,799,478,795,485,790,496,794,506,791,513,799,523,799,533,797,539,794,546,789,546,774,554,765,561,757,559,744,552,735,543,736,531,726,537,716,543,710,551,699,554,687,551,668,543,659,544,645,539,632,531,626,522,626,514,632,507,636,499,639"
+        shape="poly"
+        onclick="goodfrog()"
+      />
+    </map>
+    <script>
+      function goodfrog(){
+        alert('Froggy has been clicked');
+      }
+    </script>
+  </body>
+</html>

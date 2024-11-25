@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    table,
+      td,
+      th {
+        border: 1px solid blue;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!--COLSPAN AND ROWSPAN-->
+    <!--You can make a cell span over multiple rows and columns using 
+    the rowspan and colspan attributes respectively. The value of the attribute indicates
+    the number of cells to be spanned over.-->
+
+    <!--ROWSPAN EXAMPLE-->
+    <table>
+      <caption>
+        HUSBAND AND WIFE DATA
+      </caption>
+      <tr>
+        <th rowspan="3">Name</th>
+        <td>Miriam</td>
+        <td>Chrisphine</td>
+      </tr>
+      <tr>
+        <td>Naomi</td>
+        <td>Onyango</td>
+      </tr>
+      <tr>
+        <td>Anyango</td>
+        <td>Ogongo</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>27</td>
+        <td>42</td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td>Female</td>
+        <td>Male</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <td>Miriam</td>
+        <td>Naomi</td>
+        <td>27</td>
+        <td>Female</td>
+      </tr>
+    </table>
+  </body>
+</html>

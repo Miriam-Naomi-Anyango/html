@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+  </head>
+  <body>
+    <!--LINKS-->
+    <!--The purpose of links in web pages is to eneble one move from one html page to another
+   HTML links are hyperlinks, when you move your mouse over a link, the mouse arrow changes
+   to a little hand.
+   
+   A link does not necessarily have to be a text, it can even be an image or any other html element
+   -->
+
+    <a href="https://www.w3schools.com">Visit W3Schools Website Here</a>
+    <br />
+
+    <!--By default, Links take the following format. 
+   Unvisited - Blue and underline
+   Visited - Purple and underlined
+   Active - Red and underlined
+   However, links can be styled with css to take a different look-->
+
+    <!--HTML LINKS AND TARGETS-->
+    <!--By default, a linked page will be displayed in the current browser page
+   However, to specify the page to open the linked page, use target attribute.
+   The target attribute can have the following values
+   
+   _self - Default. Opens the document in the same window/tab as it was clicked
+   _blank - Opens the document in a new window or tab
+   _parent - opens the document in the parent frame
+   _top - opens the document in the full body of the window
+   
+   
+   A link can either be absolute or relative, the examples below consist of absolute first
+   followed by relative URLS-->
+
+    <a href="https://www.w3schools.com/" target="_blank">Hello World</a>
+    <br />
+    <a href="https://www.w3schools.com/" target="_self">Hello World</a>
+    <br />
+    <a href="https://www.w3schools.com/" target="_parent">Hello World</a>
+    <br />
+    <a href="https://www.w3schools.com/" target="_top">Hello World</a>
+    <br />
+    <a href="/formatting.html" target="_blank">See Relative URL</a>
+
+    <!--IMAGES AS LINKS-->
+    <!--To use an image as a link, we put the <img> tag inside the <a> tag as follows-->
+    <a href="https://www.w3schools.com/" target="_blank"
+      ><img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1QGWGnPP8JBZCoYFqInR4xnIssXsybj7KuA&s"
+        alt="Code Camp"
+    /></a>
+
+    <!--LINK TO AN EMAIL ADDRESS-->
+    <!--We use mailto in the href attribute plus the owners emeil to enable sending emeil to a person-->
+    <a href="mailto:minaoanya@gmail.com">Send emails Here</a>
+
+    <!--BUTTONS AS LINKS-->
+    <!--To use button as link, you have to add a javascript functionality-->
+
+    <button onclick="document.location= '/formatting.html'">Trial</button>
+
+    <!--HTML LINK COLORS-->
+    <!--Link state colors can be changed using CSS as follows-->
+
+    <!--LINK BUTTONS-->
+    <!--A link can also be displayed as a button using CSS-->
+    <a
+      href="https://www.w3schools.com/"
+      style="
+        background-color: brown;
+        border: 2px solid brown;
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+        padding: 10px;
+      "
+      >Hello</a
+    >
+
+    <!--CREATING BOOKMARKS-->
+    <!--HTML can be used to create bookmarks so the readers can jump to the part of page they want.
+    You need to first create a bookmark using the id attribute and then add a link to it -->
+    <br>
+    <p><a href="#C6">Jump to Chapter 6</a></p>
+
+    <h1>Chapter 1</h1>
+    <p>This is chapter 1</p>
+    <h2>Chapter 2</h2>
+    This is chapter 2
+    <h1 id="C6">This is Chapter 6</h1>
+    <p>
+      This is the paragraph that <br />
+      I want to get to
+    </p>
+    <h3>Chapter 7</h3>
+    <p>This is chapter 7</p>
+    <h3>Chapter 8</h3>
+    <p>This is chapter 8</p>
+    <h3>Chapter 9</h3>
+    <p>This is chapter 9</p>
+
+
+    <p><a href="#C4">Jump to Chapter 4</a></p>
+<p><a href="#C10">Jump to Chapter 10</a></p>
+
+<h2>Chapter 1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C4">Chapter 4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="C10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 11</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 12</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 13</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 14</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 15</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 16</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 17</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 18</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 19</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 20</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 21</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 22</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 23</h2>
+<p>This chapter explains ba bla bla</p>
+  </body>
+</html>

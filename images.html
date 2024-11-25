@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--IMAGES-->
+
+    <!--IMAGE WIDTH & HEIGHT-->
+    <!--To put width and height you can either use the style attribute or the width and height attribute
+    To use style attribute, you must put pixels after the height whereas if you are using width and height attribute
+    you don't have to put pixels after defined width or height value.
+    
+    It is however advisable to use the style attribute in defining width and height than using width and height so 
+    that during styles you can avoid issues.-->
+    <img
+      src="/Assets/Red Flowers.jpg"
+      alt="Red Flowers"
+      style="width: 200px; height: 200px"
+    />
+    <!--Images are used to add beauty to the site-->
+    <!--IMAGE AS LINK-->
+    <!--To use image as link, put the image in an <a> tag-->
+
+    <a href="https://www.upcitemdb.com/" target="_blank">
+      <img
+        src="/Assets/Red Flowers.jpg"
+        alt="Getting back to code"
+        style="width: 200px; height: 200px"
+      />
+    </a>
+
+    <!--IMAGE FLOAT-->
+    <!--Float attribute is used to determine which side of another content will be positioned-->
+    <div style="display: inline;">
+      <pre>
+      I find I often have to shout
+      For Granny to hear what I am talking about
+      Her seemingly bright eyes at night
+      Can not read or stare at the light
+      And she complains and complains and complains
+      Toothache, headache, backache.
+      The cup she is holding now is the same one she is looking for under the bed.
+      Ooooh my poor Granny!
+    </pre>
+    <img
+      src="/Assets/Red Flowers.jpg"
+      alt="Poem"
+      style="float: right; height: 200px; width: 200px; margin-right: 500px; margin-bottom: 50px;"
+    />
+    </div>
+   
+
+    <!--BACKGROUND IMAGE-->
+    <!--Used to design more a page, if you want a whole page to have background image
+    define using the style attribute or your CSS with background image set for the whole body
+  Note: If the background image is small, it will repeat itself horizontally and vertically until 
+  it fits the size of the page, hence to prevent this repeat, define a CSS that says background-repeat
+  and set its value to no repeat.
+  
+  If you want the background image to cover the whole size of the element, set background-size to Cover.
+  If the image is small but you want to stretch it and force it to fit the size of the element
+  the define the background size property and set it to 100% 100%-->
+
+    <!--PICTURE ELEMENT-->
+    <!--The picture element is used to display different images on different screen sizes.
+  The picture element is important when it comes to bandwidth issues. As in it enebles 
+  you display what is commensurate to the screensize being used currently.
+
+  
+  It is also important as it enables one to put more than one image format such that if a particular
+  browser does not support a certain format of image then the one that is supported is the one 
+  that will be displayed.-->
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        
+        border-collapse: collapse;
+        border-spacing: 10px;
+        padding: 10px;
+        text-align: left;
+      }
+      tr:nth-child(even) {
+        background-color: brown;
+      }
+
+      th:nth-child(even),
+      td:nth-child(even) {
+        background-color: rgba(202, 114, 114);
+      }
+      table {
+        margin-left: 100px;
+      }
+      tr{
+        border-bottom: 2px solid black;
+      }
+      tr:hover{
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <!--HTML TABLE STYLING-->
+    <!--You can use CSS to make your table look better.-->
+
+    <!--HTML TABLE - ZEBRA STRIPES-->
+    <!--To style every table row, use the :nth-child(even) selector-->
+
+    <!--HORIZONTAL DIVIDER-->
+    <!--To specify borders only at the bottom of each table row, you will have a table with horizontal Divider -->
+    <!--To achieve this, add the border-bottom properties to all tr elements.-->
+
+    <!--HOVERABLE TABLE-->
+    <!--Use the :hover selector on tr element to highlight table rows on mouse over-->
+    <table style="width: 50%">
+      <caption>
+        WELL DESIGNED ZEBRA STRIPES TABLE
+      </caption>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <td>Miriam</td>
+        <td>Anyango</td>
+        <td>27</td>
+        <td>Female</td>
+      </tr>
+      <tr>
+        <td>Chrisphine</td>
+        <td>Onyango</td>
+        <td>42</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Odelia</td>
+        <td>Akinyi</td>
+        <td>3</td>
+        <td>Female</td>
+      </tr>
+      <tr>
+        <td>Mercy</td>
+        <td>Okwiri</td>
+        <td>27</td>
+        <td>Female</td>
+      </tr>
+      <tr>
+        <td>Mustapha</td>
+        <td>Nyamuni</td>
+        <td>30</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Christabel</td>
+        <td>Ludia</td>
+        <td>32</td>
+        <td>Female</td>
+      </tr>
+      <tr>
+        <td>Timothy</td>
+        <td>Kibe</td>
+        <td>29</td>
+        <td>Male</td>
+      </tr>
+    </table>
+  </body>
+</html>

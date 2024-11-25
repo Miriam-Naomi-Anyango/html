@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--The HTML picture element allows as to display different pictures 
+    for different screen sizes and devices
+    It contains more than one source element each with an srcset attibute and the
+    source element has a media attribute whichspecifies when it's suitable for a particular image to display-->
+
+    <picture>
+      <source media="(min-width: 1000px)" srcset="Assets/beautiful-garden.jpg" />
+      <source media="(min-width: 650px)" srcset="https://cdn.shopify.com/s/files/1/0570/5324/9692/files/rabbit_1024x1024.jpg?v=1627394607" />
+      <img src="img_girl.jpg" />
+    </picture>
+
+    <!--The picture element is important for two main reasons, the first one being
+    to sort the bandwidth issue and a second reason is in cases where a browser does not support
+    a particular image format, using the picture element helps the most compatible image format 
+    to be displayed-->
+  </body>
+</html>
