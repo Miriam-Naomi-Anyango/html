@@ -5,7 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-
+        .cities{
+            color: turquoise;
+            background-color: brown;
+            display: inline-block;
+        }
+        .two{
+            color: pink;
+            background-color: blue;
+        }
+        .name{
+            color: greenyellow;
+            background-color: brown;
+        }
+        .desc{
+            color: chocolate;
+        }
     </style>
   </head>
   <body>
@@ -14,6 +29,13 @@
     share the same class. The class attribute is used to point to particular element in 
     stylesheet. Javascript can also point to a particular class and use it to manipulate
     various elements.-->
+
+    <!--The class attribute can be applied to both div and span elements
+    Different elements can share the same class. multiple classes can also 
+    be used on the same element and others. To use more than on e class on the same element
+    write the first class put a space and then write the next class.-->
+
+    <!--Class attribute is case sensistive-->
 
     <div>
       <div class="cities">
@@ -28,6 +50,22 @@
         <h1>HELSINKI</h1>
         <p>But can you leave this one in Finland</p>
       </div>
+    </div>
+    <div>
+        <h1>One thing I must say <span class="two">ITALY</span> is a good place or is it because I have 
+        not been to<span class="two"> SWEDEN</span> before.</h1>
+    </div>
+    <div>
+        <h1 class="name">Bilha</h1>
+        <p>Her name is Maulo Bilha</p>
+    </div>
+    <div>
+        <h1 class="name desc">Miriam</h1>
+        <p>Her name is Miriam Anyango</p>
+    </div>
+    <div>
+        <h1 class="name">Siku</h1>
+        <p>She is Sharon Siku</p>
     </div>
   </body>
 </html>
