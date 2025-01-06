@@ -8,7 +8,7 @@
   <body>
     <!--The HTML picture element allows as to display different pictures 
     for different screen sizes and devices
-    It contains more than one source element each with an srcset attibute and the
+    It contains more than one source element each with an srcset attribute and the
     source element has a media attribute whichspecifies when it's suitable for a particular image to display-->
 
     <picture>
@@ -21,5 +21,9 @@
     to sort the bandwidth issue and a second reason is in cases where a browser does not support
     a particular image format, using the picture element helps the most compatible image format 
     to be displayed-->
+
+    <!--Always use the <img> element as the last child element of the picture element
+    This is especially important for browsers that don't support the picture element
+    and or if none of the source tags match-->
   </body>
 </html>
