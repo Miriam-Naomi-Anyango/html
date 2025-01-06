@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      table,
+      /*table,
       td,
       th {
-        
         border-collapse: collapse;
         border-spacing: 10px;
         padding: 10px;
@@ -25,11 +24,26 @@
       table {
         margin-left: 100px;
       }
-      tr{
+      tr {
         border-bottom: 2px solid black;
       }
-      tr:hover{
+      tr:hover {
         background-color: aquamarine;
+      }*/
+
+      table, td, th{
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+      table{
+        margin-bottom: 40px;
+        margin-left: 50px;
+      }
+      tr:nth-child(even){
+        background-color: crimson;
+      }
+      td:nth-child(even), th:nth-child(even){
+        background-color: cadetblue;
       }
     </style>
   </head>
@@ -97,6 +111,61 @@
         <td>Kibe</td>
         <td>29</td>
         <td>Male</td>
+      </tr>
+    </table>
+    <table>
+      <caption>Patient Biodata Table</caption>
+      <tr>
+        <th colspan="3">Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Nationality</th>
+        <th>Marital Status</th>
+      </tr>
+      <tr>
+        <td>Miriam</td>
+        <td>Naomi</td>
+        <td>Anyango</td>
+        <td>28</td>
+        <td>Female</td>
+        <td>Kenyan</td>
+        <td>Married</td>
+      </tr>
+      <tr>
+        <td>Odelia</td>
+        <td>Grace</td>
+        <td>Akinyi</td>
+        <td>3</td>
+        <td>Female</td>
+        <td>Kenyan</td>
+        <td>Single</td>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>Dorine</td>
+        <td>Abwao</td>
+        <td>29</td>
+        <td>Female</td>
+        <td>Ugandan</td>
+        <td>Married</td>
+      </tr>
+      <tr>
+        <td>Margaret</td>
+        <td>Matama</td>
+        <td>Destiny</td>
+        <td>32</td>
+        <td>Female</td>
+        <td>Ugandan</td>
+        <td>Single</td>
+      </tr>
+      <tr>
+        <td>Boniface</td>
+        <td>Chrispinus</td>
+        <td>Okech</td>
+        <td>44</td>
+        <td>Male</td>
+        <td>Tanzanian</td>
+        <td>Married</td>
       </tr>
     </table>
   </body>
