@@ -4,6 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <style>
+      .one{
+        background-color: blueviolet;
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+      .two{
+        background-color: aqua;
+        float: left;
+        width: 60%;
+        text-align: center;
+      }
+      .three{
+        background-color: brown;
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+      @media screen and (max-width: 800px) {
+        .one, .two, .three {
+          width: 100%;
+        }
+        .one{
+          background-color: burlywood;
+        }
+        .two{
+          background-color: chartreuse;
+        }
+        .three{
+          background-color: crimson;
+        }
+      }
+    </style>
   </head>
   <body>
     <!--Responsive web design is about creating webpages that look good on all screen sizes
@@ -47,5 +82,17 @@ this wy it will follow the size of the browser window-->
 <!--MEDIA QUERIES-->
 <!--In addition to adjusting the text responsiveness and the image responsiveness
 it's common to use media queries to completely define the styles for different browser sizes-->
+
+<div>
+  <div>
+    <h1 class="one">Hello</h1>
+  </div>
+  <div>
+    <h1 class="two">Hello there</h1>
+  </div>
+  <div>
+    <h1 class="three">Hello world!</h1>
+  </div>
+</div>
   </body>
 </html>
