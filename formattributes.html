@@ -22,5 +22,24 @@
 
     <!--AUTOCOMPLETE-->
     <!--This specifies whether the form should have autocomplete onn or off-->
+    <form action="/attributes.html" autocomplete="off" target="_self" method="get">
+        <label for="first">NAME</label>
+        <input type="text" id="first" name="firstname">
+        <label for="last">NATIONALITY</label>
+        <input type="text" id="last" name="last">
+        <input type="submit">
+    </form>
+    
+    <!--NOVALIDATE-->
+    <!--The novalidate attribute is a boolean, when present it specifies that 
+    the form(input) data should not be validated when submitted. Even if the email
+    is wrong, with the novalidate attribute what is fed is what will be processed
+    -->
+
+    <form action="/attributes.html" novalidate>
+        <label for="email">Email</label>
+        <input type="email">
+        <input type="submit">
+    </form>
 </body>
 </html>
