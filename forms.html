@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--FORM ELEMENT-->
+    <!--The HTML form element is used to create an html form for users' input.
+    The form element is a container for different types of input elements.-->
+
+    <!--INPUT ELEMENT-->
+    <!--This is the most commonly used form element. The input element can be displayed in different ways
+    based on the type attribute.
+    <input "type=text" - single line text field>
+    <input "type=radio" - radio button for selecting one of many choices >
+    <input "type=checkbox" - checkbox for selecting none or more than one of many choices>
+    <input "type=submit" - submit button for submitting the form>
+    <input "type=button" - displays a clickable button>
+    -->
+
+    <!--TEXT INPUT-->
+    <!--Defines a single-line field for text input -->
+
+    <!--THE LABEL ELEMENT-->
+    <!--The label tag defines label for many different form elements.
+    the "for" attribute of the <label> should be the same as the "id" attribute of the <input> element
+    to bind them together.-->
+
+    <form action="">
+      <label for="firstname">First Name</label>
+      <input type="text" />
+      <label for="lastname">Last Name</label>
+      <input type="text" />
+    </form>
+
+    <!--RADIO BUTTON-->
+    <!--The input type radio define a radio button.-->
+    <p>Choose the best language of your choice</p>
+    <form action="">
+        <input type="radio" id="html" name="favoritelanguage" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="favoritelanguage" value="CSS">
+        <label for="css" >CSS</label><br>
+        <input type="radio" id="javascript" name="favoritelanguage" value="JAVASCRIPT">
+        <label for="javascript">JAVASCRIPT</label>
+    </form>
+
+    <!--CHECKBOXES-->
+    <!--These help you select none or more than one choice at ago.-->
+    <p>Talk to us, we are here to help. Choose how</p>
+    <form action="">
+        <input type="checkbox" name="organ1" id="kidney">
+        <label for="kidney">This falls under Renal System</label>
+        <input type="checkbox" id="stomach">
+        <label for="stomach">This is under the digestive system</label>
+    </form>
+
+    <!--SUBMIT BUTTON-->
+  </body>
+</html>
