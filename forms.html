@@ -58,5 +58,26 @@
     </form>
 
     <!--SUBMIT BUTTON-->
+    <!--The submit input type defined a button for submitting a form to a form handler
+    A form handler is typically a file in the server with script for processing input data.
+    The form handler is specified in the form's action attribute.-->
+    <p>Fill your details here</p>
+    <form action="/attributes.html">
+      <label for="name1">FIRST NAME</label>
+      <input type="text" id="name1">
+      <label for="name2">MIDDLE NAME</label>
+      <input type="text" id="name2">
+      <label for="name3">LAST NAME</label>
+      <input type="text" id="name3">
+      <input type="radio" id="gender1">
+      <label for="gender1">FEMALE</label>
+      <input type="radio" id="">
+      <label for="gender2">MALE</label>
+      <input type="submit" value="Submit">
+    </form>
+
+    <!--NAME ATTRIBUTE-->
+    <!--The name attribute is important for the value of an input field to be submitted.
+    If the input lacks the name attribute, its value will not be submitted.-->
   </body>
 </html>
