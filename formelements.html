@@ -39,16 +39,21 @@ of the input element to bind them together.-->
 <!--The select element is used to define a drop-down list
 The option element is used to define an option that can be selected.
 By default the first option is selected.
-To define a preselected option, add the selected attribute to the option-->
+To define a preselected option, add the selected attribute to the option
+The visible attribute is used to specify the number of visible values
+The multiple attribute allows one to choose more that one item-->
 
 <form action="">
     <label for="colors">Select your color of choice</label>
-    <select name="colors" id="colors">
+    <select name="colors" id="colors" multiple>
         <option value="Blue">Blue</option>
         <option value="Black">Black</option>
         <option value="Maroon">Maroon</option>
-        <option value="Pink" selected>Pink</option>
+        <option value="Pink" >Pink</option>
         <option value="Red">Red</option>
+        <option value="White">White</option>
+        <option value="orange">Orange</option>
+        <option value="yellow">Yellow</option>
     </select>
 </form>
 </body>
