@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--The html form element can contain one or more of the following elements
+input
+label
+select
+textarea
+button
+fieldset
+legend
+datalist
+output
+option
+optgroup-->
+
+<!--INPUT ELEMENT-->
+<!--Can be diplayed in very many different ways depending on the type 
+attribute as either; text, checkbox, radio, submit among others-->
+
+<!--LABEL ELEMENT-->
+<!--It is used to define label for different form elements
+the for attribute for the label tag should be the same as the id attribute
+of the input element to bind them together.-->
+
+<form action="">
+    <label for="firstname">FIRST NAME</label>
+    <input type="text" id="firstname">
+    <label for="secondname">MIDDLE NAME</label>
+    <input type="text">
+</form>
+
+<!--SELECT & OPTION ELEMENTS-->
+<!--The select element is used to define a drop-down list
+The option element is used to define an option that can be selected.
+By default the first option is selected.
+To define a preselected option, add the selected attribute to the option-->
+
+<form action="">
+    <label for="colors">Select your color of choice</label>
+    <select name="colors" id="colors">
+        <option value="Blue">Blue</option>
+        <option value="Black">Black</option>
+        <option value="Maroon">Maroon</option>
+        <option value="Pink" selected>Pink</option>
+        <option value="Red">Red</option>
+    </select>
+</form>
+</body>
+</html>
