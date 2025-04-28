@@ -22,7 +22,7 @@
 
     <!--AUTOCOMPLETE-->
     <!--This specifies whether the form should have autocomplete onn or off-->
-    <form action="/attributes.html" autocomplete="off" target="_self" method="get">
+    <form action="/attributes.html" autocomplete="on" target="_self" method="get">
         <label for="first">NAME</label>
         <input type="text" id="first" name="firstname">
         <label for="last">NATIONALITY</label>
@@ -38,6 +38,11 @@
 
     <form action="/attributes.html" novalidate>
         <label for="email">Email</label>
+        <input type="email">
+        <input type="submit">
+    </form>
+    <form action="/attributes.html" autocomplete="off">
+        <label for="emailadress">EMAIL ADRESS</label>
         <input type="email">
         <input type="submit">
     </form>
