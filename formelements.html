@@ -75,22 +75,22 @@ style attribute properties.-->
 <!--FIELDSET & LEGEND ELEMENTS-->
 <!--Is used to group related datasets in a form and the legend 
 element is used to define a caption for the fieldset.-->
-<form action="">
+<form action="/attributes.html" id="credentials" autocomplete="on">
     <fieldset>
         <legend>Personal information</legend>
         <label for="firstname">First Name</label>
-        <input type="text" id="firstname">
+        <input type="text" id="firstname" name="firstname">
         <label for="secondname">Surname</label>
-        <input type="text">
+        <input type="text" id="secondname" name="secondname">
     </fieldset>
     <fieldset>
         <legend>Education</legend>
-        <label for="primaryschool">Primary School</label>
-        <input type="text" id="primaryschool">
+        <label for="primaryschool" >Primary School</label>
+        <input type="text" id="primaryschool" name="primaryschool">
         <label for="secondaryschool">Secondary School</label>
-        <input type="text">
+        <input type="text" name="secondaryschool" id="secondaryschool">
     </fieldset>
-    <input type="submit" name="" id="">
+    <input type="submit" name="credentials" id="credentials">
 </form>
 </body>
 </html>
